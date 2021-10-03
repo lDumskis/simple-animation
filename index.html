@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animacijos praktinė pamoka.</title>
+<link href="styles.css" rel="stylesheet">
+<style>
+nav a {
+	-webkit-transition: -webkit-transform .5s, background-color 1s ease-in .5s;
+	-moz-transition: -moz-transition: -moz-transform .5s, background-color 1s easein .5s;
+	-o-transition: -o-transition: -o-transform .5s, background-color 1s ease-in .5s; 
+	transition: transform .5s, background-color 1s ease-in .5s;
+}
+
+nav a:hover {
+	background-color: red;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-0-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+@-webkit-keyframes logo {
+from {
+-webkit-transform: rotate(0) scale(.5); left:120%;
+}
+to {
+-webkit-transform: rotate(-720deg) scale(1); left:0;
+
+}
+}
+.logo {
+-webkit-animation: logo 3s;
+-moz-animation: logo 3s;
+-o-animation: logo 3s;
+-ms-animation: logo 3s;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<img src="logo.png" class="logo" width="150" height="150" alt="IInt-15">
+<h1>CSS3 animacijos pamoka</h1>
+<nav>
+	<ul>
+		<li><a href="#">Pagrindinis</a></li>
+		<li><a href="#">Galerija</a></li>
+		<li><a href="#">Kontaktai</a></li>
+		<li><a href="#">Apie</a></li>
+	</ul>
+</nav>
+</div>
+</header>
+</body>
+</html>
